@@ -1,0 +1,38 @@
+.cardArtist{
+    height: 37vh;
+    border: 0px solid white;
+}
+.over {
+    overflow: auto;
+    /* overflow-y: hidden; */
+    white-space: nowrap;
+  
+  }
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+  }
+  
+  /* .buton{
+border-radius: 70%;  } */
+  .buton:focus{
+    background-color: black;
+    color: white;
+  }
+  .search{
+width: 50%;
+margin: auto;  }
+
+
+  .heart:hover {
+    color: rgb(202, 53, 53)
+
+    }
+    
+   
+    .fav:hover{
+      background-color: black;
+      color: white;
+      width: auto;
+    }
+
