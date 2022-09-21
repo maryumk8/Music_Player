@@ -11,9 +11,7 @@ function NavBar() {
   const [title, setTitle] = useState("");
   let dispatch = useDispatch();
   const allData = useSelector((state) => state.data.allData);
-  const handleGet = () => {
-    dispatch({ type: "ALL_DATA", payload: data });
-  };
+ 
   const handleSearch = async () => {
     try {
       // const res = await handleSearchArtist(title);
@@ -36,7 +34,7 @@ function NavBar() {
   };
   useEffect(() => {
     handleSearch();
-  }, [title.length]);
+  }, [title]);
 
   return (
     <div>
